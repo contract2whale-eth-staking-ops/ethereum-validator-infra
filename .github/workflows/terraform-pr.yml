@@ -64,7 +64,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if test -d primary-aws/terraform; then
+          if test -f primary-aws/terraform/versions.tf; then
             test "$(cat .terraform-version)" = "1.15.9"
             test "$(terraform version -json | jq -r .terraform_version)" = "1.15.9"
             test -f primary-aws/terraform/.terraform.lock.hcl
@@ -74,7 +74,7 @@ jobs:
             terraform -chdir=primary-aws/terraform test
             echo "TERRAFORM_STATIC=PASS"
           else
-            echo "TERRAFORM_STATIC=SKIP reason=no_terraform_dir"
+            echo "TERRAFORM_STATIC=SKIP reason=terraform_module_not_imported"
           fi
 
       - name: Run enabled contract suites

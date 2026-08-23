@@ -51,8 +51,8 @@ class TerraformPrContractTests(unittest.TestCase):
 
     def test_terraform_static_skips_cleanly_before_the_first_terraform_slice(self) -> None:
         workflow = read(PR_WORKFLOW)
-        self.assertIn("if test -d primary-aws/terraform; then", workflow)
-        self.assertIn("TERRAFORM_STATIC=SKIP reason=no_terraform_dir", workflow)
+        self.assertIn("if test -f primary-aws/terraform/versions.tf; then", workflow)
+        self.assertIn("TERRAFORM_STATIC=SKIP reason=terraform_module_not_imported", workflow)
         self.assertIn("TERRAFORM_STATIC=PASS", workflow)
         self.assertIn('test "$(cat .terraform-version)" = "1.15.9"', workflow)
         self.assertIn("terraform_version: 1.15.9", workflow)
