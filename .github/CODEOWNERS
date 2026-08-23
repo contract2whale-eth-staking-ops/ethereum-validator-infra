@@ -1,0 +1,13 @@
+# Before the first push, CHAPTER 1 renders contract2whale-eth-staking-ops to the verified GitHub organization.
+/.github/workflows/        @contract2whale-eth-staking-ops/platform-approvers
+/.github/CODEOWNERS        @contract2whale-eth-staking-ops/security-approvers
+/primary-aws/terraform/    @contract2whale-eth-staking-ops/platform-approvers
+/primary-aws/terraform/ci/runtime-inputs.json @contract2whale-eth-staking-ops/security-approvers
+/primary-aws/bootstrap/    @contract2whale-eth-staking-ops/security-approvers
+/primary-aws/bootstrap/cicd/parameters.json @contract2whale-eth-staking-ops/security-approvers
+/primary-aws/ansible/      @contract2whale-eth-staking-ops/platform-approvers
+/standby-aws/terraform/    @contract2whale-eth-staking-ops/platform-approvers
+/standby-aws/terraform/ci/runtime-inputs.json @contract2whale-eth-staking-ops/security-approvers
+/standby-aws/ansible/      @contract2whale-eth-staking-ops/platform-approvers
+/shared/                   @contract2whale-eth-staking-ops/security-approvers
+/drills/                   @contract2whale-eth-staking-ops/security-approvers
