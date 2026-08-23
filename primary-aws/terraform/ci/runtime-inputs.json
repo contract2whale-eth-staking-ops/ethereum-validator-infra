@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "repository": "contract2whale-eth-staking-ops/ethereum-validator-infra",
+  "repository_owner_id": "318178846",
+  "repository_id": "1343510879",
+  "environment": "hoodi-testnet-dev",
+  "aws": {
+    "account_id": "300054528770",
+    "region": "ap-northeast-2",
+    "state_key": "hoodi-testnet-dev/terraform.tfstate",
+    "plan_role_arn": "arn:aws:iam::300054528770:role/hoodi-testnet-dev-TerraformPlanRole",
+    "apply_role_arn": "arn:aws:iam::300054528770:role/hoodi-testnet-dev-TerraformApplyRole",
+    "kms_break_glass_role_arn": "arn:aws:iam::300054528770:role/hoodi-testnet-dev-KmsBreakGlassRole",
+    "state_bucket": "hoodi-testnet-dev-tfstate-300054528770",
+    "state_kms_key_arn": "arn:aws:kms:ap-northeast-2:300054528770:key/d2039872-eb51-4dbe-8d4a-7c48c7a6023d",
+    "plan_artifact_bucket": "hoodi-testnet-dev-tfplans-300054528770",
+    "plan_artifact_kms_key_arn": "arn:aws:kms:ap-northeast-2:300054528770:key/f6d9b2e6-6d68-4e1b-bbba-b0dd14cb8479",
+    "node_permissions_boundary_arn": "arn:aws:iam::300054528770:policy/hoodi-testnet-dev-node-permissions-boundary"
+  },
+  "terraform": {
+    "network": "hoodi",
+    "kms_recovery_region": "eu-central-1",
+    "key_pair_name": "eth-failover-hoodi",
+    "admin_cidrs": [
+      "211.58.20.156/32"
+    ],
+    "backup_peer_public_ip": null,
+    "sso_operator_permission_sets": [
+      "testnet_operator_01_builder",
+      "testnet_operator_02_approver"
+    ],
+    "operator_alert_emails": [
+      "contract2whale+testnet_op1@gmail.com",
+      "contract2whale+testnet_op2@gmail.com"
+    ],
+    "enable_deadman_alarm": false,
+    "enable_staging_bucket": true,
+    "region": "ap-northeast-2"
+  }
+}
