@@ -1,0 +1,2 @@
+tests/test_codeowners_render.py
+tests/test_terraform_pr_contract.py
