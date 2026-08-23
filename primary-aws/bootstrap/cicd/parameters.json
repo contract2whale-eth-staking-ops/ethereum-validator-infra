@@ -1,0 +1,82 @@
+[
+  {
+    "ParameterKey": "GitHubRepository",
+    "ParameterValue": "contract2whale-eth-staking-ops/ethereum-validator-infra"
+  },
+  {
+    "ParameterKey": "GitHubRepositoryOwnerId",
+    "ParameterValue": "318178846"
+  },
+  {
+    "ParameterKey": "GitHubRepositoryId",
+    "ParameterValue": "1340322627"
+  },
+  {
+    "ParameterKey": "GitHubEnvironment",
+    "ParameterValue": "hoodi-testnet-dev"
+  },
+  {
+    "ParameterKey": "GitHubTeardownEnvironment",
+    "ParameterValue": "hoodi-testnet-dev-teardown"
+  },
+  {
+    "ParameterKey": "ExistingGithubOidcProviderArn",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "TerraformPlanRoleName",
+    "ParameterValue": "hoodi-testnet-dev-TerraformPlanRole"
+  },
+  {
+    "ParameterKey": "TerraformApplyRoleName",
+    "ParameterValue": "hoodi-testnet-dev-TerraformApplyRole"
+  },
+  {
+    "ParameterKey": "NodeRoleName",
+    "ParameterValue": "eth-failover-hoodi-node"
+  },
+  {
+    "ParameterKey": "NodeInstanceProfileName",
+    "ParameterValue": "eth-failover-hoodi-node"
+  },
+  {
+    "ParameterKey": "NodeSshKeyPairName",
+    "ParameterValue": "eth-failover-hoodi"
+  },
+  {
+    "ParameterKey": "NodeSshPublicKey",
+    "ParameterValue": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKFGN4vdDB535ewpVi4B8QGDb6Gp3W/Prri1Mk4B/Jw1 hoodi-testnet-dev/operator-1"
+  },
+  {
+    "ParameterKey": "NodePermissionsBoundaryName",
+    "ParameterValue": "hoodi-testnet-dev-node-permissions-boundary"
+  },
+  {
+    "ParameterKey": "StateBucketMode",
+    "ParameterValue": "CREATE"
+  },
+  {
+    "ParameterKey": "StateBucketName",
+    "ParameterValue": "hoodi-testnet-dev-tfstate-300054528770"
+  },
+  {
+    "ParameterKey": "ExistingStateBucketName",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "ExistingStateKmsKeyArn",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "StateKey",
+    "ParameterValue": "hoodi-testnet-dev/terraform.tfstate"
+  },
+  {
+    "ParameterKey": "PlanArtifactBucketName",
+    "ParameterValue": "hoodi-testnet-dev-tfplans-300054528770"
+  },
+  {
+    "ParameterKey": "CloudTrailTrailArn",
+    "ParameterValue": ""
+  }
+]
