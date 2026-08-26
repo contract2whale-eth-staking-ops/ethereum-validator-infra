@@ -12,3 +12,4 @@ tests/test_terraform_cicd_iam_contract.py
 tests/test_sync_aws_runtime_outputs.py
 tests/test_bootstrap_baseline_check_runs.py
 tests/test_bootstrap_parameters.py
+tests/test_sg_allowlist_contract.py
